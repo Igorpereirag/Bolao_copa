@@ -45,7 +45,7 @@
                     <a class='nav-link' href="regulamento.php">REGULAMENTO</a>
                 </li>
                 <li class='nav-item'>
-                    <a class='nav-link' type="button" id="logoutBtn">SAIR</a>
+                    <a class='nav-link' type="button" id="logoutBtn" href="login.php" >SAIR</a>
                 </li>
             </ul>
         </div>

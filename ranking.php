@@ -21,16 +21,16 @@
         <div class="collapse navbar-collapse align-items-center justify-content-center" id="navbarNav">
             <ul class="navbar-nav align-items-center">
                 <li class='nav-item'>
-                    <a class="nav-link active" aria-current="page" href="meuspalpites.html">PALPITES</a>
+                    <a class="nav-link active" aria-current="page" href="meuspalpites.php">PALPITES</a>
                 </li>
                 <li class='nav-item'>
-                    <a class="nav-link" href="ranking.html">MEUS RESULTADOS</a>
+                    <a class="nav-link" href="ranking.php">MEUS RESULTADOS</a>
                 </li>
                 <li class='nav-item'>
-                    <a class='nav-link' href="resultados.html">RESULTADOS DOS JOGOS</a>
+                    <a class='nav-link' href="resultados.php">RESULTADOS DOS JOGOS</a>
                 </li>
                 <li class='nav-item'>
-                    <a class='nav-link' href="regulamento.html">REGULAMENTO</a>
+                    <a class='nav-link' href="regulamento.php">REGULAMENTO</a>
                 </li>
                 <li class='nav-item'>
                     <a class='nav-link' id="logoutBtn">SAIR</a>

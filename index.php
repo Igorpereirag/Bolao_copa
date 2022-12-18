@@ -20,7 +20,7 @@
         <div>
             <h1 id="h1Index">Bem vindo ao<br>
                 Bolão do Pombo</h1><br>
-            <button type="button" href="login.php" id="initialBtn">CLIQUE AQUI PARA COMEÇAR</button>
+            <button type="button" id="initialBtn"><a href="login.php">CLIQUE AQUI PARA COMEÇAR</a> </button>
         </div>
     </section>
    
