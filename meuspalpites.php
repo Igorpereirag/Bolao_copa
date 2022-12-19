@@ -84,7 +84,7 @@
                 <th style="text-align:center;vertical-align:middle">Resultado</th>
             </tr>
         </thead>
-        <form method="post" action="scripts/palpite.php">
+        <form method="get" action="scripts/palpite.php">
             <tbody>
                 <?php
                 include "scripts/config.php";
