@@ -4,6 +4,11 @@
    
     $user = $_SESSION['email'];
     
+    if($user == ""){
+        Echo "<script>alert('voce não pode acessar essa pagina sem fazer o login!')
+        window.location.href='login.php'</script>";
+    }
+    
 ?>
 
 

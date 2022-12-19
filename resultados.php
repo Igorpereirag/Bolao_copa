@@ -1,3 +1,16 @@
+<?php
+    session_start();
+    include_once('scripts/config.php');
+    
+    $user = $_SESSION['email'];
+    if($user == ""){
+        Echo "<script>alert('voce não pode acessar essa pagina sem fazer o login!')
+        window.location.href='login.php'</script>";
+
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="PT-BR">
 
@@ -52,7 +65,42 @@
       <h1>RESULTADOS</h1>
       <div class="containerResultados">
         <table>
-
+        <tbody>
+                <?php
+                include "scripts/config.php";
+                $sql = "SELECT * FROM dados_jogos WHERE rodada = '1 RODADA' AND status_jogo = 'ABERTO'";
+                $query = $banco->query($sql);
+                $a = 1;
+                while ($dados = $query->fetch_array()){
+                ?>
+                <input type="hidden" name="jogo<?php echo $a; ?>" value="<?php echo $dados['id']; ?>">
+                <tr>
+                    <td style="text-align:center;vertical-align:middle">
+                        <?php echo $dados['timea']; ?>
+                        <img src="_images/<?php echo $dados['timea']; ?>.png">
+                    </td>
+                    <td style="text-align:center;vertical-align:middle">
+                        <input type="text" name="timea<?php echo $a; ?>" maxlength="2" required>
+                    </td>
+                    <td style="text-align:center;vertical-align:middle"> x </td>
+                    <td style="text-align:center;vertical-align:middle">
+                        <?php echo $dados['timeb']; ?>
+                        <img src="_images/<?php echo $dados['timeb']; ?>.png">
+                    </td>
+                    <td style="text-align:center;vertical-align:middle">
+                        <input type="text" name="timeb<?php echo $a; ?>" maxlength="2" required>
+                    </td>
+                </tr>
+                <tr  style="text-align:center;vertical-align:middle">
+                    <td colspan="5">
+                        <?php echo $dados['data']; ?><br>
+                        <?php echo $dados['local']. ' '; ?>
+                        <?php echo $dados['horario']. ' '; ?>
+                        <?php echo $dados['tipo']. ' '; ?>
+                    </td>
+                </tr>
+                <?php $a++;} ?>
+            </tbody>
          
 
 
