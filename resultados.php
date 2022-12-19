@@ -78,7 +78,7 @@
                     <td style="text-align:center;vertical-align:middle">
                         <?php echo $dados['timea']; ?>
                         <img src="_images/<?php echo $dados['timea']; ?>.png">
-                        <h3><?php echo $dados['rt1']?></h3>
+                        <h1><?php echo $dados['rt1']?></h1>
                         
                     </td>
                     <td style="text-align:center;vertical-align:middle">
@@ -89,7 +89,7 @@
                     
                         <img src="_images/<?php echo $dados['timeb']; ?>.png">
                         <?php echo $dados['timeb'];?>
-                        <h3><?php echo $dados['rt2']?></h3>
+                        <h1><?php echo $dados['rt2']?></h1>
                     </td>
                     <td style="text-align:center;vertical-align:middle">
                         <h2 type="text" name="timeb<?php echo $a; ?>" maxlength="2" required>
