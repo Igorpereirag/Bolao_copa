@@ -79,7 +79,7 @@
                 <th style="text-align:center;vertical-align:middle">Resultado</th>
             </tr>
         </thead>
-        <form method="post" action="salvar.php">
+        <form method="POST" action="scripts/palpite.php">
             <tbody>
                 <?php
                 include "scripts/config.php";
@@ -126,12 +126,7 @@
       
       
     </div>
-
-
-                <button id="submitBtn" type="submit">SUBMETER PALPITES</button>
-            </div>
-        </form>
-            </section>
+ </section>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
