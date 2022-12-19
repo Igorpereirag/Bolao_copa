@@ -100,7 +100,7 @@
                         <img src="_images/<?php echo $dados['timea']; ?>.png">
                     </td>
                     <td style="text-align:center;vertical-align:middle">
-                        <input type="text" name="timea<?php echo $a; ?>" maxlength="2" required>
+                        <input type="text" id="campopalpite" name="timea<?php echo $a; ?>" maxlength="2" required>
                     </td>
                     <td style="text-align:center;vertical-align:middle"> x </td>
                     <td style="text-align:center;vertical-align:middle">
@@ -108,7 +108,7 @@
                         <img src="_images/<?php echo $dados['timeb']; ?>.png">
                     </td>
                     <td style="text-align:center;vertical-align:middle">
-                        <input type="text" name="timeb<?php echo $a; ?>" maxlength="2" required>
+                        <input type="text" id="campopalpite"  name="timeb<?php echo $a; ?>" maxlength="2" required>
                     </td>
                 </tr>
                 <tr  style="text-align:center;vertical-align:middle">

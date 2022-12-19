@@ -68,7 +68,7 @@
         <tbody>
                 <?php
                 include "scripts/config.php";
-                $sql = "SELECT * FROM dados_jogos WHERE rodada = '1 RODADA' AND status_jogo = 'ABERTO'";
+                $sql = "SELECT * FROM dados_jogos WHERE status_jogo = 'aberto'";
                 $query = $banco->query($sql);
                 $a = 1;
                 while ($dados = $query->fetch_array()){
@@ -78,18 +78,21 @@
                     <td style="text-align:center;vertical-align:middle">
                         <?php echo $dados['timea']; ?>
                         <img src="_images/<?php echo $dados['timea']; ?>.png">
+                        <h3><?php echo $dados['rt1']?></h3>
                         
                     </td>
                     <td style="text-align:center;vertical-align:middle">
-                        <input type="text" name="timea<?php echo $a; ?>" maxlength="2" required>
+                        <h2 type="text" name="timea<?php echo $a; ?>" maxlength="2">
                     </td>
                     <td style="text-align:center;vertical-align:middle"> x </td>
                     <td style="text-align:center;vertical-align:middle">
-                        <?php echo $dados['timeb']; ?>
+                    
                         <img src="_images/<?php echo $dados['timeb']; ?>.png">
+                        <?php echo $dados['timeb'];?>
+                        <h3><?php echo $dados['rt2']?></h3>
                     </td>
                     <td style="text-align:center;vertical-align:middle">
-                        <input type="text" name="timeb<?php echo $a; ?>" maxlength="2" required>
+                        <h2 type="text" name="timeb<?php echo $a; ?>" maxlength="2" required>
                     </td>
                 </tr>
                 <tr  style="text-align:center;vertical-align:middle">
