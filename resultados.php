@@ -61,7 +61,7 @@
     </div>
   </section>
   <section class="idForm">
-    <form>
+    <form method="POST" action="scripts/palpite.php">
       <h1>RESULTADOS</h1>
       <div class="containerResultados">
         <table>
@@ -78,6 +78,7 @@
                     <td style="text-align:center;vertical-align:middle">
                         <?php echo $dados['timea']; ?>
                         <img src="_images/<?php echo $dados['timea']; ?>.png">
+                        
                     </td>
                     <td style="text-align:center;vertical-align:middle">
                         <input type="text" name="timea<?php echo $a; ?>" maxlength="2" required>
