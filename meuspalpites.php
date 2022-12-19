@@ -66,12 +66,12 @@
             <img src="assets/bg.png" id="imgBGLogin">
         </div>
     </section>
-    <h1><?php
-   echo "faça sua jogada:", $user;
-?>    
+
   <section class="idForm">
         <form class="palpites">
-            <h1>MEUS PALPITES</h1>
+            <h1>Faça seus palpites: <?php
+   echo $user;
+?>    </h1>
             <div class="containerPalpites">
             <div class="container">
       <table class="table">
