@@ -68,7 +68,7 @@
     </section>
 
   <section class="idForm">
-        <form class="palpites">
+        <form class="palpites" method="Post" action="scripts/palpite.php">
             <h1>Faça seus palpites: <?php
    echo $user;
 ?>    </h1>
@@ -84,7 +84,7 @@
                 <th style="text-align:center;vertical-align:middle">Resultado</th>
             </tr>
         </thead>
-        <form method="POST" action="scripts/palpite.php">
+        
             <tbody>
                 <?php
                 include "scripts/config.php";
@@ -120,12 +120,14 @@
                     </td>
                 </tr>
                 <?php $a++;} ?>
+                
             </tbody>
             <tr>
                 <td>
                 <button id="submitBtn" type="submit">SUBMETER PALPITES</button>
                     
             </tr>
+            
         </form>                    
       </table>  
       

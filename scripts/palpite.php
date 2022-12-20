@@ -4,6 +4,8 @@ session_start();
      
 $user = $_SESSION['email'];
 
+if(isset($_POST['submit'])){
+
 //echo json_encode($_POST);
 date_default_timezone_set('America/Sao_Paulo');
 $login = $user;
@@ -153,7 +155,10 @@ $sql = "INSERT INTO aposta (id_dados_jogos, t1,t2, login,data) VALUES ('$jogo16'
 $query=$banco->query($sql);
     
     
-    
+}else{
+    Echo "<script>alert('palpites feitos com sucesso!')
+        window.location.href='../home.php'</script>";
+}
     
 
     
